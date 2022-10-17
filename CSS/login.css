@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+p { margin-bottom: 0; }
+
+.btnArea #loginBtn { margin-top: 40px; }
+.btnArea #kakaoLogin { background: yellow; }
