@@ -1,5 +1,5 @@
 # 파일 업로드 하기전에 무조건 pull!!
-// pull 받기
+// pull 받기 ㅇㅇㅇㅇㅇㅇ
 $ git pull origin main (master 아닌 main으로 지정함)
 
 // 파일 올리기
