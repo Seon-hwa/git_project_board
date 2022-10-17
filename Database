@@ -1,0 +1,30 @@
+221017 데이터베이스- 회원가입 테이블(아이디, 이메일 중복방지), 로그인기록 테이블 설계
+
+★회원가입
+자동증가값
+아이디
+비번
+닉네임
+이메일
+등록일시
+create table boardaccount(
+no int(4) not null auto_increment,
+id varchar(200) not null,
+pw text not null,
+nickname varchar(200) not null,
+email varchar(250) not null,
+registerdate datetime not null default '0001-01-01 01:00:00',
+primary key(no, id),
+unique key(id,email)
+);
+
+★로그인기록
+자동증가값
+아이디
+접속일시
+create table boardaccess(
+no int(8) not null auto_increment,
+accessid varchar(200) not null,
+accesstime datetime not null default '0001-01-01 01:00:00',
+primary key(no)
+);
